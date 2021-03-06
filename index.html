@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Compiled and minified CSS, materialize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+  <style>
+    .my{
+      margin: 3rem 0;
+    }
+
+    .flex{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    li{
+      font-size: 1.35rem;
+    }
+
+    input{
+      color:teal;
+    }
+
+    i{
+      cursor: pointer;
+    }
+
+    .removed{
+      display:none
+    }
+
+  </style>
+  <title>Document</title>
+</head>
+<body class="#424242 grey darken-3">
+  <div class="container ">
+
+    <ul class="#424242 grey darken-3">
+      <li class="card-panel teal darken-1 my">
+        <h4 class="grey-text text-darken-4">TODO LIST</h4>
+        <small class="teal-text text-darken-4">Powered by Materialize and JavaScript</small>
+      </li>
+
+      <!-- filter todo -->
+      <li class="input-field col s6 my" id="filterTodo">
+        <form class="search">
+          <label for="text">Filter TODOS</label>
+          <input id="text" type="text">
+        </form>
+      </li>
+
+      <!-- todo list -->
+      <div class="todos">
+        <li class="todo card-panel #1de9b6 teal accent-4 flex">
+          <span class="grey-text text-darken-4">Buy groceries</span>
+          <i class="delete fas fa-times"></i>
+        </li>
+        <li class="todo card-panel #1de9b6 teal accent-4 flex">
+          <span class="grey-text text-darken-4">Vacuum the sofa</span>
+          <i class="delete fas fa-times"></i>
+        </li>
+        <li class="todo card-panel #1de9b6 teal accent-4 flex">
+          <span class="grey-text text-darken-4">Go to cleaners</span>
+          <i class="delete fas fa-times"></i>
+        </li>
+      </div>
+
+      <!-- submit todo -->
+      <li class="input-field col s6 my">
+        <form class="addTodo">
+          <label >Add TODO</label>
+          <input id="text" type="text">
+        </form>
+      </li>
+
+    </ul>
+  </div>
+
+
+  <!-- Compiled and minified JavaScript, materialize -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="app.js">
+
+  </script>
+</body>
+</html>
